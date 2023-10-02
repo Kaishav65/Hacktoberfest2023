@@ -1,0 +1,31 @@
+name: todo
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  dotted_border: ^2.0.0+3
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_easyloading: ^3.0.5
+  get: ^4.6.5
+  get_storage: ^2.0.3
+  step_progress_indicator: ^1.0.2
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
