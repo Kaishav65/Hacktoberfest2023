@@ -1,0 +1,30 @@
+class Solution {
+public:
+    bool checkPal(string s , int i , int j){
+        while(i<=j){
+            if(s[i] != s[j]){
+                return false;
+            }
+            else{
+                i++;
+                j--;
+            }
+        }
+        return true;
+    }
+    bool validPalindrome(string s) {
+        int i = 0 , j = s.length() - 1 ;
+        while(i<j){
+            if(s[i] == s[j]){
+                i++;
+                j--;
+            }
+            else{
+                bool ans1 = checkPal(s, i+1 , j);
+                bool ans2 = checkPal(s, i , j-1);
+                return (ans1 || ans2);
+            }
+        }
+        return true;
+    }
+};
