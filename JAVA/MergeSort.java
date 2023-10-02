@@ -1,5 +1,4 @@
-class MergeSort {
-
+public class MergeSort {
     // Merges two subarrays of arr[].
     // First subarray is arr[l..m]
     // Second subarray is arr[m+1..r]
@@ -76,6 +75,7 @@ class MergeSort {
         System.out.println();
     }
 
+    // Driver code
     public static void main(String args[]) {
         int arr[] = { 12, 11, 13, 5, 6, 7 };
 
