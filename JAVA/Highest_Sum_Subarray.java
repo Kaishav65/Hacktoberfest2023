@@ -7,7 +7,7 @@ class Sub_arr_sum
         max_sum=a[0];
         for(i=0;i<=3;i++)
         {
-            sum=0;/reinitialized
+            sum=0;//reinitialized
             for(j=i;j<=3;j++)
             {
                 sum=sum+a[i];
