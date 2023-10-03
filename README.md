@@ -10,9 +10,13 @@ Join Hactoberfest 2023, Make you Pull Request and contribute to open source. Rai
 ## Contributors of `Hacktoberfest 2023`
 
 <div align="center">
+  
 <a href="https://github.com/Kaishav65/Hacktoberfest2023/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Kaishav65/Hacktoberfest2023" />
+  
+  <img src="https://contrib.rocks/image?repo=Kaishav45/Hacktoberfest2023" />
+  
 </a>
+
   </div>
 
   
