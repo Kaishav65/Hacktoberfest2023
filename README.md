@@ -1,4 +1,9 @@
 # Hacktoberfest2023  
+
+## 🥲 Sorry to say guys but our repo has been excluded from fest, so no need to contribute in my repo
+### 💖 Thanks for your contribution, keep contributing in other's repos 
+
+
 <img src="https://img.shields.io/badge/hacktoberfest-2023-blueviolet" alt="Hacktober Badge"/>
 Join Hactoberfest 2023, Make you Pull Request and contribute to open source. Raise Genuine PRs, Your PRs will be accepted. Don't forget to spread love and if you like give us a ⭐️ star in repo
 
