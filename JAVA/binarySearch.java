@@ -17,6 +17,7 @@ public class binarySearch{
         }
         System.out.println("enter value to be searched :");
         int x=sc.nextInt();
+        sc.close();
         binsearch(arr,x);
 
 
