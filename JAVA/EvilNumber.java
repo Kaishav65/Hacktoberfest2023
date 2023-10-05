@@ -1,36 +1,28 @@
 import java.util.Scanner;
 
-public class EvilNumber
-{
-     public static void main(String args[]) {
-        Scanner in = new Scanner(System.in);
+public class EvilNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a positive number: ");
-        int n = in.nextInt();
-        in.close();
+
+        int n = scanner.nextInt();
+        scanner.close();
+
         if (n < 0) {
             System.out.println("Invalid Input");
             return;
         }
-        
-        int count = 0;
-        int p = 0;
-        int binNum = 0;
-        
+
+        int count = 0, binNum = 0, p = 0;
+
         while (n > 0) {
-            int d = n % 2;
-            if (d == 1)
-                count++;
-            binNum += (int)(d * Math.pow(10, p));
-            p++;
+            count += n % 2;
+            binNum += (n % 2) * Math.pow(10, p++);
             n /= 2;
         }
-        
+
         System.out.println("Binary Equivalent: " + binNum);
         System.out.println("No. of 1's: " + count);
-        
-        if (count % 2 == 0)
-            System.out.println("Output: Evil Number");
-        else
-            System.out.println("Output: Not an Evil Number");
+        System.out.println(count % 2 == 0 ? "Output: Evil Number" : "Output: Not an Evil Number");
     }
 }
