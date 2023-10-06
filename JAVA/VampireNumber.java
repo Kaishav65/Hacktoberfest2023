@@ -81,5 +81,6 @@ public class VampireNumbers
         {
             System.out.println("Not a Vampire Number");
         }
+        sc.close();
     }
 }
