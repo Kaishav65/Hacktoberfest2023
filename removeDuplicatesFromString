@@ -1,0 +1,28 @@
+public class RemoveDuplicateCharacter {
+
+	String Duplicate(String str) {
+
+		String str2="";
+		for(int i=0; i<=str.length()-1;i++) {
+			if(!str2.contains(String.valueOf(str.charAt(i)))) {
+				str2 = str2 + str.charAt(i);
+			}
+		}
+		return str2;
+	}
+}
+
+import java.util.Scanner;
+public class RemovingDuplicateCharacter {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a string");
+		String str = scan.nextLine();
+		
+		RemoveDuplicateCharacter dup = new RemoveDuplicateCharacter();
+		String res = dup.Duplicate(str);
+		System.out.println(res);
+	}
+}
