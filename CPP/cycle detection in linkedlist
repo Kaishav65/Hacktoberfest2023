@@ -1,0 +1,26 @@
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        // method 1: using slow and fast pointer TC:O(n),SC:O(1)
+        // ListNode*fast=head,*slow=head;
+        // if(head==NULL) return false;
+        // while(fast!=NULL&&fast->next!=NULL){
+        //     fast=fast->next->next;
+        //     slow=slow->next;
+        //     if(fast==slow) return true;
+        // }
+        // return false;
+
+
+        // method 2: using Hashing TC:O(n),SC:O(n)
+        unordered_map<ListNode*,bool>hash;
+        ListNode*temp=head->next;
+        while(temp!=NULL&&temp!=head){
+            if(hash.find(temp)!=hash.end()) return true;
+            // hash.insert(head);
+            hash[temp]=true;
+            temp=temp->next;
+        }
+        return false;
+    }
+};
